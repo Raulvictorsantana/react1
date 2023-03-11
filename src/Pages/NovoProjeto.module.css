@@ -1,0 +1,14 @@
+.NovoProjeto_conatiner{
+    width: 450px;
+    margin: 0 auto;
+    padding: 3em;
+
+}
+
+.NovoProjeto_conatiner h1{
+    margin-bottom: 0.5em;
+}
+
+.NovoProjeto_conatiner p{
+    color: rgb(115, 118, 121);
+}
