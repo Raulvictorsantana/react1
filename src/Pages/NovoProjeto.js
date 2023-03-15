@@ -7,7 +7,7 @@ function NovoProjeto(){
                         
     <h1> Nova Pagina</h1>
     <p>Crie seu  projeto para adicionar os serviços </p>
-    <Formulario/>
+    <Formulario btntext="Criar projeto"/>
     </div>
     ) 
 }

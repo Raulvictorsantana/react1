@@ -1,26 +1,29 @@
 import styles from './Formulario.module.css'
+import Input from '../form/Input'
+import Select from '../form/Select'
+import Botao from '../form/Botao'
 
-function Formulario (){
+function Formulario (btntext){
     return(
     <form className={styles.Form}>
-      <div> 
-         <input type="text" placeholder="Insira o nome do projeto">
-         </input>
-      </div>
+      <Input
+      type="text"
+      text ="Nome do projeto"
+      name ="name"
+      placeholder="Insira o nome do projeto"
+      />
       
-      <div>
-        <input type="number" placeholder=" Insira o orçamento total"></input>
-      </div>
+      
+      <Input
+      type="number"
+      text ="Orçamento do projeto"
+      name ="budget"
+      placeholder="Insira o orçamento total"
+      />
 
-      <div>
-         <select name="Ctegoria_id">
-            <option disabled selected> selecione a categoria</option>
-         </select>
-       </div>
+     <Select name="categoria_id" text="selecione a categoria"/>
    
-        <div>
-         <input type="submit" value="Criar projeto"/>
-        </div>
+       <Botao text={btntext}/>
       
     </form>
     )
