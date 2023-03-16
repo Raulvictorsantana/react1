@@ -3,7 +3,7 @@ import Input from '../form/Input'
 import Select from '../form/Select'
 import Botao from '../form/Botao'
 
-function Formulario (btntext){
+function Formulario (btnText){
     return(
     <form className={styles.Form}>
       <Input
@@ -23,9 +23,9 @@ function Formulario (btntext){
 
      <Select name="categoria_id" text="selecione a categoria"/>
    
-       <Botao text={btntext}/>
-      
+     <Botao text={btnText}/>
     </form>
+    //botao nao esta recebendo o valor dinamico
     )
         
     
