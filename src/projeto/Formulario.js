@@ -5,8 +5,9 @@ import Select from '../form/Select'
 import Botao from '../form/Botao'
 
 
-function Formulario (btnText){
+function Formulario (handlesumit,btnText,projectData){
   const[categories,setCategories]=useState([])
+  const[ project,setProject]=useState(projectData||{})
   useEffect(()=>{  
       fetch('http://localhost:5000/categories',{
       method: "GET",
@@ -21,13 +22,23 @@ function Formulario (btnText){
     .catch ((err)=>console.log(err))
 
   },[])
+  const submit = (e)=>{
+    e.preventDefault()
+    handlesumit(project)
+  }
+  
+  function handlechange(e){
+    setProject({...project,[e.target.name]:e.target.value})
+ console.log(project)
+  }
     return(
-    <form className={styles.Form}>
+    <form onSubmit={submit} className={styles.Form}>
       <Input
       type="text"
       text ="Nome do projeto"
       name ="name"
       placeholder="Insira o nome do projeto"
+      handleOnchange ={handlechange}
       />
       
       
@@ -36,6 +47,7 @@ function Formulario (btnText){
       text ="Orçamento do projeto"
       name ="budget"
       placeholder="Insira o orçamento total"
+      handleOnchange ={handlechange}
       />
 
      <Select name="categoria_id"
