@@ -5,7 +5,8 @@ import Select from '../form/Select'
 import Botao from '../form/Botao'
 
 
-function Formulario (handlesumit,btnText,projectData){
+
+function Formulario ({handleSubmit,btnText,projectData}){
   const[categories,setCategories]=useState([])
   const[ project,setProject]=useState(projectData||{})
   useEffect(()=>{  
@@ -24,7 +25,8 @@ function Formulario (handlesumit,btnText,projectData){
   },[])
   const submit = (e)=>{
     e.preventDefault()
-    handlesumit(project)
+    handleSubmit(project)
+    
   }
   
   function handlechange(e){

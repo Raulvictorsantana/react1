@@ -8,7 +8,7 @@ function NovoProjeto(){
    
     const Navigate = useNavigate()
 
-    function createPost(project){
+    function CreatePost({project}){
         project.cost=0
         project.services=[]
         
@@ -17,8 +17,8 @@ function NovoProjeto(){
          headers: {
             'Content-type':'application/json',
             },
-            body: JSON.stringfy(project),
-
+            body: JSON.stringfy({project}),
+ 
         })
 
         .then((resp)=>resp.json())
@@ -35,7 +35,7 @@ function NovoProjeto(){
                         
     <h1> Nova Pagina</h1>
     <p>Crie seu  projeto para adicionar os serviços </p>
-    <Formulario handleSubmit={createPost} btnText="ola"/>
+    <Formulario handleSubmit={CreatePost} btnText="ola"/>
     </div>
     ) 
 }   
