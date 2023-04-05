@@ -21,7 +21,7 @@ function NovoProjeto(){
         })
           .then((resp) => resp.json())
           .then((data) => {
-            Navigate('/projects', { message: 'Projeto criado com sucesso!' })
+            Navigate('/projeto', {state: {  message: 'Projeto criado com sucesso!'}})
           })
       }
     return (
