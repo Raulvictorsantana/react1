@@ -27,7 +27,7 @@ function NovoProjeto(){
     return (
      <div className={styles.NovoProjeto_conatiner}>
                         
-    <h1> Nova Pagina</h1>
+    <h1> Novo Projeto</h1>
     <p>Crie seu  projeto para adicionar os serviços </p>
     <Formulario handleSubmit={CreatePost} btnText="ola"/>
     </div>

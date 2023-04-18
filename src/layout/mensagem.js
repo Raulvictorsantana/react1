@@ -13,11 +13,6 @@
       }
       setvisible(true)
 
-      const timer =setTimeout(()=>{
-         setvisible(false)
-      },3000)
-      return ()=> clearTimeout(timer)
-
    },[msg])
     
    return(  

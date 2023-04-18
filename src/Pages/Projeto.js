@@ -1,10 +1,11 @@
+import styles from './projeto.module.css'
 import Mensagem from '../layout/Mensagem'
-function Projeto(msg){
+function Projeto(){
     return(
-       <div>
-        <h1> Meus projetos</h1>
-        <Mensagem msg= "alguma coisa" />
+       <div className={styles.projeto_container}>
+        <h1> Meus projetos</h1> 
+        <Mensagem msg= "Sem projetos no momento" />
        </div>
     )
-}
+}  
  export default Projeto

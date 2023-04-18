@@ -6,7 +6,7 @@ import Projeto from  './Pages/Projeto'
 import Navbar from './layout/Navbar'
 import Footer from './layout/Footer' 
 import NovoProjeto from './Pages/NovoProjeto'
-//import Container from './layout/Container'
+
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       <div>
       <Routes>
 
-        <Route exact path="/" element={<Home />}></Route>
+       <Route exact path="/" element={<Home />}></Route>
         <Route path="/empresa" element={<Empresa/>}></Route>
         <Route path="/Contato" element={<Contato/>}></Route>
         <Route path="/Projeto" element={<Projeto/>}></Route>
