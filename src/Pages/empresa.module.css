@@ -4,7 +4,7 @@
 }
 .empresa_container {
     
-        width: 50%;
+        max-width: 500px;
         padding: 1em;
         border: 1px solid #dbac10;
         margin: 0 auto;
@@ -14,7 +14,8 @@
         font-size: 0.8rem;
         font-weight: bold;
         border-radius: 20px;
-        background-color: #ddd5bd;
-        margin-top: 5%;
+    background-color: #e6ad126e;
+       
+        margin-top:20px;
         word-spacing: 2px;
   }

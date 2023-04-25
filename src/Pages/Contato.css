@@ -1,0 +1,42 @@
+/* CSS para estilizar a página de contato com número de telefone e e-mail */
+
+.contato {
+background-color: #2372aa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background-color: #e6ad126e;
+
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #4e4e4e;
+  text-align: center;
+}
+
+p {
+  margin: 20px 0;
+  font-size: 24px;
+  color: #4e4e4e;
+  text-align: center;
+}
+
+a {
+  color: #6ab4e8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
